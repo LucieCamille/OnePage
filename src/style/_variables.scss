@@ -1,0 +1,66 @@
+//colors
+$main-color: #1D164E;
+$title-color: #F0C000;
+$text-color: #FFFCF0;
+$light-pink: #F2BFFF;
+$light-yellow: #FFEB99;
+$yellow-gradient: linear-gradient(90deg, rgba(255, 235, 153, 0.8) 0%, #F0C000 100%);
+$cta-color: #C003F0;
+
+//Big Cta
+@mixin BigCta($ctaRadius: 2em) {
+  //cta color
+  background: linear-gradient(165.78deg, #FFEB99 9.57%, #F0C000 89.48%);
+  box-shadow: 0px 0px 8px rgba(242, 191, 255, 0.7), inset -2px -4px 8px #BD9700, inset 2px 4px 8px #FFF5CC;
+  border-radius: $ctaRadius;
+  //text
+  font-family: 'Almendra';
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+// HooverCta
+@mixin hooverCta($ctaRadius: 2em) {
+  //cta color
+  background: linear-gradient(165.78deg, #C003F0 9.57%, #6A0085 89.48%);
+  box-shadow: 0px 0px 6px rgba(255, 235, 153, 0.6), inset -2px -4px 10px #4E0061, inset 2px 4px 6px rgba(242, 191, 255, 0.4);
+  border-radius: $ctaRadius;
+  //text
+  font-family: 'Almendra';
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+//Glass effect
+@mixin glassEffect($glassRadius: 0.8em) {
+  background: url(ave-calvar-NqXqLPhdbvU-unsplash.jpg), linear-gradient(128.13deg, rgba(242, 191, 255, 0.45) 8.02%, rgba(242, 191, 255, 0) 74.34%);
+  border-radius: $glassRadius;
+}
+// glass effetc Hoover
+@mixin glassHoover($glassRadius: 0.8em) {
+  background: url(ave-calvar-NqXqLPhdbvU-unsplash.jpg), linear-gradient(280.74deg, rgba(242, 191, 255, 0.45) 0.51%, rgba(242, 191, 255, 0) 98.15%);
+  border-radius: $glassRadius;
+}
+
+
+//Size
+$main-width: 64rem;
+$post-height: 16rem;
+$post-width: 14rem;
+$phone: 27rem;
+$tablet: 48rem;
+
+//font
+@mixin noTitleAlmendra {
+  font-family: 'Almendra';
+  font-style: normal;
+  font-weight: 400;
+  color: $title-color;
+}

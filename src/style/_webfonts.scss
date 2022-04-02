@@ -1,0 +1,25 @@
+// textFont
+@font-face {
+  font-family: "Inter";
+  src:  url("style/font/Inter/InterVariable.ttf") format("trutype-variations");
+  font-weight: 100 900;
+  font-variation-settings: 'wght'100, 'wght'900;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// titleFont
+@font-face {
+  font-family: "Almendra";
+  src: url("style/font/almendra/Almendra-Regular.ttf") format("trutype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Almendra";
+  src: url("style/font/almendra/Almendra-Bold.ttf") format("trutype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&display=swap');
