@@ -1,0 +1,82 @@
+//3rd section -> mobile:
+.present {
+  &__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+
+  &__about_allpost {
+    display: grid;
+  }
+
+  &__about_post {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+
+    @include glassEffect;
+    padding: 1rem;
+    margin: 1rem;
+    width: 13rem;
+  }
+
+  &__about_bullets {
+    display: flex;
+    opacity: 1;
+
+    @media (min-width: $phone) {
+      opacity: 0;
+    }
+  }
+
+  &__about_bullet {
+    margin: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: $light-pink;
+    filter: blur(0.2rem);
+
+    &:first-child {
+      background-color: $title-color;
+    }
+  }
+
+  // &__about_bullet .active {
+  //   background-color: $title-color;
+  // }
+
+  //3rd section -> desktop
+  @media (min-width: $phone) {
+    &__about_allpost {
+      display: grid;
+      grid-auto-rows: 18rem;
+      grid-auto-flow: row dense;
+      justify-items: center;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: $tablet) {
+    &__about_allpost {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: $main-width;
+    }
+  }
+}
+
+//class hidden:
+.hidden {
+  display: none;
+}
+
+.swiper {
+  max-width: 14rem;
+  max-height: 14rem;
+  /*overflow: hidden;*/
+}

@@ -1,7 +1,7 @@
 // textFont
 @font-face {
   font-family: "Inter";
-  src:  url("style/font/Inter/InterVariable.ttf") format("trutype-variations");
+  src:  url("style/font/Inter/InterVariable.ttf") format("truetype-variations");
   font-weight: 100 900;
   font-variation-settings: 'wght'100, 'wght'900;
 }
@@ -11,13 +11,13 @@
 // titleFont
 @font-face {
   font-family: "Almendra";
-  src: url("style/font/almendra/Almendra-Regular.ttf") format("trutype");
+  src: url("style/font/almendra/Almendra-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Almendra";
-  src: url("style/font/almendra/Almendra-Bold.ttf") format("trutype");
+  src: url("style/font/almendra/Almendra-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: bold;
 }

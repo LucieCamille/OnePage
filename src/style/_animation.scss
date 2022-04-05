@@ -1,0 +1,227 @@
+//animations
+//cauldron animations:
+@keyframes fire {
+  0% {
+    background-color: $title-color;
+  }
+  100% {
+    background-color: $light-yellow;
+  }
+}
+
+@keyframes fumes {
+  0% {
+    filter: blur(3rem);
+    width: 4.8rem;
+    height: 10rem;
+    top: -8rem;
+    left: 2.4rem;
+  }
+  100% {
+    filter: blur(2rem);
+    width: 4rem;
+    height: 4rem;
+    top: -4rem;
+    left: 3rem;
+  }
+}
+
+
+//sparkles animations:
+@keyframes spOne {
+  0% {
+    top: 0rem;
+    left: -2rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  25% {
+    top: -1rem;
+    left: -4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  50% {
+    top: -2rem;
+    left: 0rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  75% {
+    top: 2rem;
+    left: -1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  100%{
+    top: 0rem;
+    left: -2rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@keyframes spTwo {
+  0% {
+    top: 4rem;
+    left: -2rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  25% {
+    top: 2rem;
+    left: 0rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  50% {
+    top: 0rem;
+    left: -5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  75% {
+    top: 6rem;
+    left: -3rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  100%{
+    top: 4rem;
+    left: -2rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@keyframes spThree {
+  0% {
+    top: 6rem;
+    left: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  25% {
+    top: 8.5rem;
+    left: 1.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  50% {
+    top: 7rem;
+    left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  75% {
+    top: 4rem;
+    left: 1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  100%{
+    top: 6rem;
+    left: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@keyframes spFour {
+  0% {
+    top: 1rem;
+    left: 3rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  25% {
+    top: 4rem;
+    left: 5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  50% {
+    top: 0rem;
+    left: 2rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  75% {
+    top: -1rem;
+    left: 6rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  100%{
+    top: 1rem;
+    left: 3rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@keyframes spFive {
+  0% {
+    top: 7rem;
+    left: 4rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  25% {
+    top: 4rem;
+    left: 3rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  50% {
+    top: 6rem;
+    left: 6rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  75% {
+    top: 9rem;
+    left: 5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  100%{
+    top: 7rem;
+    left: 4rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@keyframes spSix {
+  0% {
+    top: -2rem;
+    left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  25% {
+    top: -3rem;
+    left: -1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  50% {
+    top: -4rem;
+    left: 0rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  75% {
+    top: -3rem;
+    left: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  100%{
+    top: -2rem;
+    left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}

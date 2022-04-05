@@ -37,7 +37,7 @@
   &__legal {
     margin: 0 1rem;
     align-items: end;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     p {
       padding: 0 1rem 0 0;
@@ -50,9 +50,21 @@
 
     &__nav {
       order: -1;
+      align-self: center;
+      justify-self: center;
     }
 
     &__legal {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &__cta {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    &__logo {
       grid-column: 1 / -1;
     }
   }

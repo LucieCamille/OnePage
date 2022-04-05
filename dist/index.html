@@ -1,100 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OnePage</title>
-  <link rel="stylesheet" href="style/style.min.css">
-</head>
-<body>
-   <!--Header-->
-  <header class="headr">
-    <h1 class="headr__logo">
-      OwlyPotion
-      <img src="img/logoSmall.svg" alt="OwlyPotion" class="headr__logo_small">
-      <img src="img/logoMedium.svg" alt="OwlyPotion" class="headr__logo_medium">
-    </h1>
-    <input type="checkbox" aria-hidden="true" class="headr__trigger">
-    <nav class="headr__nav">
-      <a href="#">Concept</a>
-      <a href="#">About</a>
-      <a href="#">Features</a>
-      <a href="#" class="headr__cta">Get the App</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnePage</title>
+    <link rel="stylesheet" href="style/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="headr">
+      <h1 class="headr__logo">
+        OwlyPotion
+        <img src="img/logoSmall.svg" alt="OwlyPotion" class="headr__logo_small" />
+        <img src="img/logoMedium.svg" alt="OwlyPotion" class="headr__logo_medium" />
+      </h1>
+      <input type="checkbox" aria-hidden="true" class="headr__trigger" />
+      <nav class="headr__nav">
+        <a href="#">Concept</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#" class="headr__cta">Get the App</a>
+      </nav>
+    </header>
 
-   <!--Presentation of the App-->
-  <main class="present">
-    <!-- Moto and mockup -->
-    <section class="present__header">
-      <section class="present__header_moto">
-        <h2>Why should you do it yourself when we do it for you?!</h2>
-        <a href="#" class="btn pump">Download with <em>PumpStore</em></a>
-        <a href="#" class="btn wiz">Download with <em>Wiz Play</em></a>
+    <!--Presentation of the App-->
+    <main class="present">
+      <!-- Moto and mockup -->
+      <section class="present__header">
+        <section class="present__header_moto">
+          <h2>Why should you do it yourself when we do it for you?!</h2>
+          <a href="#" class="btn pump">Download with <em>PumpStore</em></a>
+          <a href="#" class="btn wiz">Download with <em>Wiz Play</em></a>
+        </section>
+        <picture class="present__header_mockup">
+          <img src="img/mockupBig.png" alt="Application mockup" class="present__header_bigmockup" />
+          <img src="img/mockupSmall.png" alt="Application mockup" class="present__header_smallmockup" />
+        </picture>
       </section>
-      <picture class="present__header_mockup">
-        <img src="img/mockupBig.png" alt="Application mockup" class="present__header_bigmockup">
-        <img src="img/mockupSmall.png" alt="Application mockup" class="present__header_smallmockup">
-      </picture>
-    </section>
 
-    <!-- why this app -->
-    <section class="present__concept">
-      <section class="present__concept_text">
-        <h3>OwlyPotion makes your life easier</h3>
-        <p>The art of potions is a subtle science and a delicate balance that need to be mastered to truly understand the beauty of the soflty simmering cauldron with its shimmering fumes (Severus Snape). Worst of all, if not properly mastered, it can be lethal.</p>
-        <p>With OwlyPotion, no need to master it nor to waste time. Order our certified potions online and get them deliver at your window by our owl shipping service. You can even get a subscription to your favorites and receive them as often as you like! </p>
-        <a href="#" class="present__more">Read more</a>
+      <!-- why this app -->
+      <section class="present__concept">
+        <section class="present__concept_text">
+          <h3>OwlyPotion makes your life easier</h3>
+          <p>The art of potions is a subtle science and a delicate balance that need to be mastered to truly understand the beauty of the soflty simmering cauldron with its shimmering fumes (Severus Snape). Worst of all, if not properly mastered, it can be lethal.</p>
+          <p>With OwlyPotion, no need to master it nor to waste time. Order our certified potions online and get them deliver at your window by our owl shipping service. You can even get a subscription to your favorites and receive them as often as you like!</p>
+          <a href="#" class="present__more">Read more</a>
+        </section>
+        <picture class="present__concept_anim">
+          <img src="img/cauldron.svg" alt="cauldron with fumes" />
+        </picture>
       </section>
-      <picture class="present__concept_anim">
-        <img src="img/cauldron.svg" alt="cauldron with fumes">
-      </picture>
-    </section>
 
-    <!-- what's owlypotion -->
-    <section class="present__about">
+      <!-- what's owlypotion -->
+      <!-- <section class="present__about">
+        <h3>What's OwlyPotion?</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <section class="present__about_allpost swiper-wrapper">
+              <div class="swiper-slide">
+                <section class="swiper-slide present__about_post">
+                  <picture>
+                    <img src="img/shop.svg" alt="Shop Icon" />
+                  </picture>
+                  <p>42 partner shops in UK</p>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <section class="swiper-slide present__about_post">
+                  <picture>
+                    <img src="img/displayPotion.svg" alt="Bottle of Potion Icon" />
+                  </picture>
+                  <p>2654 certified potions</p>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <section class="swiper-slide present__about_post">
+                  <picture>
+                    <img src="img/delivery.svg" alt="Owl delivery Icon" />
+                  </picture>
+                  <p>4 types of delivery, including an extra fast by phoenix</p>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <section class="swiper-slide present__about_post">
+                  <picture>
+                    <img src="img/PotionMaster.svg" alt="Potion Master Icon" />
+                  </picture>
+                  <p>On-call Potion Master and Healer</p>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <section class="swiper-slide present__about_post">
+                  <picture>
+                    <img src="img/displayPotion.svg" alt="Bottle of Potion Icon" />
+                  </picture>
+                  <p>Bottles under unbreakable charm</p>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <section class="swiper-slide present__about_post">
+                  <picture>
+                    <img src="img/deposit.svg" alt="Deposit Icon" />
+                  </picture>
+                  <p>A simple deposit system</p>
+                </section>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
+
+      <!-- what's owlypotion -->
+      <section class="present__about">
       <h3>What's OwlyPotion?</h3>
       <section class="present__about_allpost">
-        <section class="present__about_post">
-          <picture>
-            <img src="img/shop.svg" alt="Shop Icon">
-          </picture>
-          <p>42 partner shops in UK</p>
-        </section>
-        <section class="present__about_post">
-          <picture>
-            <img src="img/displayPotion.svg" alt="Bottle of Potion Icon">
-          </picture>
-          <p>2654 certified potions</p>
-        </section>
-        <section class="present__about_post">
-          <picture>
-            <img src="img/delivery.svg" alt="Owl delivery Icon">
-          </picture>
-          <p>4 types of delivery, including an extra fast by phoenix</p>
-        </section>
-        <section class="present__about_post">
-          <picture>
-            <img src="img/PotionMaster.svg" alt="Potion Master Icon">
-          </picture>
-          <p>On-call Potion Master and Healer</p>
-        </section>
-        <section class="present__about_post">
-          <picture>
-            <img src="img/displayPotion.svg" alt="Bottle of Potion Icon">
-          </picture>
-          <p>Bottles under unbreakable charm</p>
-        </section>
-        <section class="present__about_post">
-          <picture>
-            <img src="img/deposit.svg" alt="Deposit Icon">
-          </picture>
-          <p>A simple deposit system</p>
-        </section>
+
+            <section class="present__about_post">
+              <picture>
+                <img src="img/shop.svg" alt="Shop Icon">
+              </picture>
+              <p>42 partner shops in UK</p>
+            </section>
+
+            <section class="present__about_post">
+              <picture>
+                <img src="img/displayPotion.svg" alt="Bottle of Potion Icon">
+              </picture>
+              <p>2654 certified potions</p>
+            </section>
+
+            <section class="present__about_post">
+              <picture>
+                <img src="img/delivery.svg" alt="Owl delivery Icon">
+              </picture>
+              <p>4 types of delivery, including an extra fast by phoenix</p>
+            </section>
+
+            <section class="present__about_post">
+              <picture>
+                <img src="img/PotionMaster.svg" alt="Potion Master Icon">
+              </picture>
+              <p>On-call Potion Master and Healer</p>
+            </section>
+
+            <section class="present__about_post">
+              <picture>
+                <img src="img/displayPotion.svg" alt="Bottle of Potion Icon">
+              </picture>
+              <p>Bottles under unbreakable charm</p>
+            </section>
+
+            <section class="present__about_post">
+              <picture>
+                <img src="img/deposit.svg" alt="Deposit Icon">
+              </picture>
+              <p>A simple deposit system</p>
+            </section>
       </section>
       <div class="present__about_bullets" aria-hidden="true">
-        <div class="present__about_bullet active"></div>
+        <div class="present__about_bullet-active"></div>
         <div class="present__about_bullet"></div>
         <div class="present__about_bullet"></div>
         <div class="present__about_bullet"></div>
@@ -103,54 +173,67 @@
       </div>
     </section>
 
-    <!-- How does it work -->
-    <section class="present__features">
-      <section class="present__features_text">
-        <h3>How does it work?</h3>
-        <p>Download our app and get registered. You have now access to all certified potions from our partner shops!Add potions to your favorites, order them online, get a subscription or pop in our shops.</p>
-        <p> Once your bottle is empty, send them back by our delivery owl or return them in our shops and get your desposit back. No risque of cluttered cupboards with that system, and you’re always sure the bottles are properly cleaned.</p>
-        <a href="#" class="present__more">Read more</a>
-        <a href="#" class="present__features_cta">Get the App</a>
+      <!-- How does it work -->
+      <section class="present__features">
+        <section class="present__features_text">
+          <h3>How does it work?</h3>
+          <p>Download our app and get registered. You have now access to all certified potions from our partner shops!Add potions to your favorites, order them online, get a subscription or pop in our shops.</p>
+          <p>Once your bottle is empty, send them back by our delivery owl or return them in our shops and get your desposit back. No risque of cluttered cupboards with that system, and you’re always sure the bottles are properly cleaned.</p>
+          <a href="#" class="present__more">Read more</a>
+          <a href="#" class="present__features_cta">Get the App</a>
+        </section>
+        <picture class="present__features_anim">
+          <div class="anima">
+            <div class="anima__sparkle spOne"></div>
+            <div class="anima__sparkle spTwo"></div>
+            <div class="anima__sparkle spThree"></div>
+            <div class="anima__sparkle spFour"></div>
+            <div class="anima__sparkle spFive"></div>
+            <div class="anima__sparkle spSix"></div>
+          </div>
+          <img src="img/animPotion.svg" alt="bottle of potion with sparkles" />
+        </picture>
       </section>
-      <picture class="present__features_anim">
-        <img src="img/animPotion.svg" alt="bottle of potion with sparkles">
-      </picture>
-    </section>
-  </main>
+    </main>
 
- <!--Footer-->
-  <footer class="footr">
-    <section class="footr__cta">
-      <h1 class="footr__logo">
-        OwlyPotion
-      <img src="img/logoMedium.svg" alt="OwlyPotion">
-      </h1>
-      <a href="#" class="btn pump">Download with <em>PumpStore</em></a>
-      <a href="#" class="btn wiz">Download with <em>Wiz Play</em></a>
-    </section>
-    <section class="footr__nav">
-      <section class="footr__pm">
-        <h3>The PM corporation</h3>
-        <ul>
-          <li><a href="#">The project</a></li>
-          <li><a href="#">Partner shops</a></li>
-          <li><a href="#">Become partner</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
+    <!--Footer-->
+    <footer class="footr">
+      <section class="footr__cta">
+        <h1 class="footr__logo">
+          OwlyPotion
+          <img src="img/logoMedium.svg" alt="OwlyPotion" />
+        </h1>
+        <a href="#" class="btn pump">Download with <em>PumpStore</em></a>
+        <a href="#" class="btn wiz">Download with <em>Wiz Play</em></a>
       </section>
-      <section class="footr__app">
-        <h3>The Application</h3>
-        <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
+      <section class="footr__nav">
+        <section class="footr__pm">
+          <h3>The PM corporation</h3>
+          <ul>
+            <li><a href="#">The project</a></li>
+            <li><a href="#">Partner shops</a></li>
+            <li><a href="#">Become partner</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </section>
+        <section class="footr__app">
+          <h3>The Application</h3>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </section>
       </section>
-    </section>
-    <section class="footr__legal">
-      <p>Copyright 2022 OwlyPotion&co</p>
-      <p>Termes & Conditons</p>
-      <p>Privacy</p>
-    </section>
-  </footer>
-</body>
+      <section class="footr__legal">
+        <p>Copyright 2022 OwlyPotion&co</p>
+        <p>Termes & Conditons</p>
+        <p>Privacy</p>
+      </section>
+    </footer>
+
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="script/index.js"></script> 
+  </body>
 </html>
