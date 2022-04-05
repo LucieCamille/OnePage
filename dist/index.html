@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OnePage</title>
     <link rel="stylesheet" href="style/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <!--Header-->
@@ -21,9 +18,9 @@
       </h1>
       <input type="checkbox" aria-hidden="true" class="headr__trigger" />
       <nav class="headr__nav">
-        <a href="#">Concept</a>
-        <a href="#">About</a>
-        <a href="#">Features</a>
+        <a href="#why">Concept</a>
+        <a href="#who">About</a>
+        <a href="#how">Features</a>
         <a href="#" class="headr__cta">Get the App</a>
       </nav>
     </header>
@@ -44,7 +41,7 @@
       </section>
 
       <!-- why this app -->
-      <section class="present__concept">
+      <section class="present__concept" id="why">
         <section class="present__concept_text">
           <h3>OwlyPotion makes your life easier</h3>
           <p>The art of potions is a subtle science and a delicate balance that need to be mastered to truly understand the beauty of the soflty simmering cauldron with its shimmering fumes (Severus Snape). Worst of all, if not properly mastered, it can be lethal.</p>
@@ -57,67 +54,53 @@
       </section>
 
       <!-- what's owlypotion -->
-      <!-- <section class="present__about">
+      <section class="present__about" id="who">
         <h3>What's OwlyPotion?</h3>
         <div class="swiper">
-          <div class="swiper-wrapper">
-            <section class="present__about_allpost swiper-wrapper">
-              <div class="swiper-slide">
-                <section class="swiper-slide present__about_post">
-                  <picture>
-                    <img src="img/shop.svg" alt="Shop Icon" />
-                  </picture>
-                  <p>42 partner shops in UK</p>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="swiper-slide present__about_post">
-                  <picture>
-                    <img src="img/displayPotion.svg" alt="Bottle of Potion Icon" />
-                  </picture>
-                  <p>2654 certified potions</p>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="swiper-slide present__about_post">
-                  <picture>
-                    <img src="img/delivery.svg" alt="Owl delivery Icon" />
-                  </picture>
-                  <p>4 types of delivery, including an extra fast by phoenix</p>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="swiper-slide present__about_post">
-                  <picture>
-                    <img src="img/PotionMaster.svg" alt="Potion Master Icon" />
-                  </picture>
-                  <p>On-call Potion Master and Healer</p>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="swiper-slide present__about_post">
-                  <picture>
-                    <img src="img/displayPotion.svg" alt="Bottle of Potion Icon" />
-                  </picture>
-                  <p>Bottles under unbreakable charm</p>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="swiper-slide present__about_post">
-                  <picture>
-                    <img src="img/deposit.svg" alt="Deposit Icon" />
-                  </picture>
-                  <p>A simple deposit system</p>
-                </section>
-              </div>
+          <section class="present__about_allpost swiper-wrapper">
+            <section class="swiper-slide present__about_post">
+              <picture>
+                <img src="img/shop.svg" alt="Shop Icon" />
+              </picture>
+              <p>42 partner shops in UK</p>
             </section>
-          </div>
+            <section class="swiper-slide present__about_post">
+              <picture>
+                <img src="img/displayPotion.svg" alt="Bottle of Potion Icon" />
+              </picture>
+              <p>2654 certified potions</p>
+            </section>
+            <section class="swiper-slide present__about_post">
+              <picture>
+                <img src="img/delivery.svg" alt="Owl delivery Icon" />
+              </picture>
+              <p>4 types of delivery, including an extra fast by phoenix</p>
+            </section>
+            <section class="swiper-slide present__about_post">
+              <picture>
+                <img src="img/PotionMaster.svg" alt="Potion Master Icon" />
+              </picture>
+              <p>On-call Potion Master and Healer</p>
+            </section>
+            <section class="swiper-slide present__about_post">
+              <picture>
+                <img src="img/displayPotion.svg" alt="Bottle of Potion Icon" />
+              </picture>
+              <p>Bottles under unbreakable charm</p>
+            </section>
+            <section class="swiper-slide present__about_post">
+              <picture>
+                <img src="img/deposit.svg" alt="Deposit Icon" />
+              </picture>
+              <p>A simple deposit system</p>
+            </section>
+          </section>
           <div class="swiper-pagination"></div>
         </div>
-      </section> -->
+      </section>
 
       <!-- what's owlypotion -->
-      <section class="present__about">
+      <!-- <section class="present__about">
       <h3>What's OwlyPotion?</h3>
       <section class="present__about_allpost">
 
@@ -171,10 +154,10 @@
         <div class="present__about_bullet"></div>
         <div class="present__about_bullet"></div>
       </div>
-    </section>
+    </section> -->
 
       <!-- How does it work -->
-      <section class="present__features">
+      <section class="present__features" id="how">
         <section class="present__features_text">
           <h3>How does it work?</h3>
           <p>Download our app and get registered. You have now access to all certified potions from our partner shops!Add potions to your favorites, order them online, get a subscription or pop in our shops.</p>
@@ -231,9 +214,9 @@
       </section>
     </footer>
 
-
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-    <script src="script/index.js"></script> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script/lib.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- <script src="script/index.js"></script> -->
   </body>
 </html>
