@@ -1,3 +1,4 @@
+//si device = mobile & tablet => swiper:
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -21,9 +22,6 @@ const swiper = new Swiper('.swiper', {
     768: {
       slidesPerView: 3,
       spaceBetween: 30,
-      // grid: {
-      //   rows: 2,
-      // },
     },
   },
 

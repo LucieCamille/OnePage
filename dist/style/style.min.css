@@ -436,6 +436,7 @@ a i {
 
 .headr__logo_small {
   display: block;
+  margin: 1rem 0 0 1rem;
 }
 
 @media (min-width: 27rem) {
@@ -451,6 +452,13 @@ a i {
 @media (min-width: 27rem) {
   .headr__logo_medium {
     display: block;
+    margin: 1rem 0 0 1rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .headr__logo_medium {
+    margin: 0;
   }
 }
 
@@ -757,15 +765,21 @@ a i {
   }
 }
 
-.present__about {
+.present__about_swipe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.present__about h3 {
+.present__about_swipe h3 {
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .present__about_swipe {
+    display: none;
+  }
 }
 
 .present__about_post {
@@ -775,6 +789,39 @@ a i {
   background: url(ave-calvar-NqXqLPhdbvU-unsplash.jpg), linear-gradient(128.13deg, rgba(242, 191, 255, 0.45) 8.02%, rgba(242, 191, 255, 0) 74.34%);
   border-radius: 0.8em;
   padding: 1rem;
+}
+
+.present__about {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .present__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .present__about h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .present__about_allpost {
+    display: grid;
+    grid-auto-rows: 18rem;
+    grid-auto-flow: row dense;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 64rem;
+  }
+  .present__about_post {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    background: url(ave-calvar-NqXqLPhdbvU-unsplash.jpg), linear-gradient(128.13deg, rgba(242, 191, 255, 0.45) 8.02%, rgba(242, 191, 255, 0) 74.34%);
+    border-radius: 0.8em;
+    padding: 1rem;
+    margin: 1rem;
+    width: 13rem;
+  }
 }
 
 .present__features {
@@ -923,13 +970,6 @@ a i {
   }
 }
 
-@media (min-width: 48rem) {
-  .swiper {
-    min-width: 48rem;
-    max-width: 64rem;
-  }
-}
-
 .swiper-slide {
   height: 85% !important;
 }
@@ -994,6 +1034,9 @@ a i {
 @media (min-width: 27rem) {
   .footr {
     grid-template-columns: 1fr 1fr;
+  }
+  .footr__cta {
+    justify-content: start;
   }
   .footr__nav {
     order: -1;

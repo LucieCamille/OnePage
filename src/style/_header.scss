@@ -12,16 +12,22 @@
 
   &__logo_small {
     display: block;
+    margin: 1rem 0 0 1rem;
 
-    @media (min-width:27rem) {
+    @media (min-width:$phone) {
       display: none;
     }
   }
   &__logo_medium {
     display: none;
 
-    @media (min-width:27rem) {
+    @media (min-width:$phone) {
       display: block;
+      margin: 1rem 0 0 1rem;
+    }
+
+    @media (min-width:$tablet) {
+      margin: 0;
     }
   }
   &__trigger {
