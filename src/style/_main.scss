@@ -2,7 +2,7 @@
 .btn {
   @include glassEffect;
   padding: 1rem;
-  opacity: 0.7;
+  opacity: 0.8;
   color: $text-color;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -14,6 +14,7 @@
 
   &:hover{
     @include glassHoover;
+    opacity: 1;
   }
 
   em {
@@ -67,6 +68,9 @@
 
 
 //1ere section -> mobile
+  &__header {
+    margin: 1rem 1rem 5rem 1rem;
+  }
   &__header_moto {
     display: grid;
     justify-items: center;
@@ -75,7 +79,7 @@
     h2 {
       padding: 2rem;
       margin: 2rem 0.5rem;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
     a{
@@ -94,7 +98,7 @@
   }
 
   &__header_smallmockup {
-    max-width: 14rem;
+    max-width: 12rem;
     display: block;
   }
 
@@ -141,7 +145,7 @@
     align-items: flex-start;
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding: 1rem 0.5rem;
     }
     p {
@@ -207,10 +211,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding: 1rem;
+      margin: 1rem 0;
     }
 
     @media (min-width:$tablet) {
@@ -241,8 +247,8 @@
       align-items: center;
   
       h3 {
-        font-size: 1.5rem;
-        padding: 1rem;
+        font-size: 2rem;
+        padding: 1.5rem 1rem;
       }
     }
 
@@ -278,7 +284,7 @@
 
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding: 1rem 0.5rem;
     }
     p {
@@ -387,33 +393,17 @@
 //end of anima
 }
 
-//class hidden:
-.hidden {
-  display: none;
-}
-
 //swiper
 .swiper {
   width: 16rem;
   height: 18rem;
   
   @media (min-width: $phone) {
-    // width: 38rem;
     min-width: $phone;
     max-width: $tablet;
   }
 
-  // @media (min-width: $tablet) {
-  //   // width: 52rem;
-  //   min-width: $tablet;
-  //   max-width: $main-width;
-  // }
-
 }
-
-// .swiper-wrapper {
-//   margin: 0;
-// }
 
 .swiper-slide {
   height: 85% !important;
