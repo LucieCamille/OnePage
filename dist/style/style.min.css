@@ -577,6 +577,12 @@ a i {
   font-size: 1.5rem;
 }
 
+@media (min-width: 48rem) {
+  .headr__nav a:hover {
+    box-shadow: inset 0 -2px 0 0 #F0C000;
+  }
+}
+
 .headr__nav a:last-of-type {
   align-self: end;
   color: #C003F0;
