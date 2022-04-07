@@ -538,14 +538,21 @@ a i {
   position: fixed;
   left: 100vw;
   right: -100vw;
-  top: 10rem;
+  top: 8rem;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  align-items: end;
   z-index: 9;
   min-height: 100vh;
   background-color: #1D164E;
+}
+
+@media (min-width: 27rem) {
+  .headr__nav {
+    top: 12rem;
+  }
 }
 
 @media (min-width: 48rem) {
