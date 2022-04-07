@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   // loopedSlides: null,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
   },
   
   // Responsive breakpoints
