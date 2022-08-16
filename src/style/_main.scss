@@ -50,6 +50,16 @@
 
 //Main presentation
 .present {
+  position: relative;
+  top: 15vh;
+
+  @media (min-width: $phone) {
+    top: 18vh;
+  }
+
+  @media (min-width: $tablet) {
+    top: 0;
+  }
 
 //display of section 1, 2 and 4 mobile&desktop
   &__header,
